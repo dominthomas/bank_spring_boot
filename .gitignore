@@ -36,6 +36,7 @@ build/
 .DS_Store
 node_modules
 /dist
+node
 
 # local env files
 .env.local
