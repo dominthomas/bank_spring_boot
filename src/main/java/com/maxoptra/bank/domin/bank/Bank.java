@@ -76,9 +76,9 @@ public class Bank implements Comparable<Bank>{
 
     @Override
     public int compareTo(Bank bank) {
-        return Comparator.comparing(Bank::getBankName)
+        return Comparator.comparing(Bank::getExpiryDate)
                 .thenComparing(Bank::getCardNumber)
-                .thenComparing(Bank::getExpiryDate)
+                .thenComparing(Bank::getBankName)
                 .compare(this, bank);
     }
 }
